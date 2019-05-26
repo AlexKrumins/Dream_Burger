@@ -29,6 +29,13 @@ div{
 }
 
 ul{
+  font-weight: bold;
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+      1px 1px 0 white;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -62,5 +69,6 @@ button {
 }
 
 .form-group {
+  margin-top: 5px;
   margin-bottom: 5px;
 }
