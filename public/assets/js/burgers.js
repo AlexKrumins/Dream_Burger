@@ -1,8 +1,8 @@
 $(function() {
   $(".change-devour").on("click", function(event) {
     var id = $(this).data("id");
-    var changeState = $(this).data("changeState");
-
+    var changeState = $(this).data("changestate");
+    console.log("changeState " + changeState)
     var newState = {
       devoured: changeState
     };
