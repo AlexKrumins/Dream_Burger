@@ -12,6 +12,16 @@ router.get("/", function(req, res) {
   });
 });
 
+router.get("/api/burgers", function(req, res) {
+  burger.selectAll(function(data) {
+    var hbsObject = {
+      burgers: data
+    };
+    console.log(hbsObject);
+    return res.json(data);
+  });
+});
+
 router.post("/api/burgers", function(req, res) {
   burger.insertOne([
     "burger_name", "devoured"
