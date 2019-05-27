@@ -25,15 +25,18 @@ $(function() {
       burger_name: $("#bk").val().trim(),
       devoured: $("[name=eat]:checked").val().trim()
     };
-
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newBurger
-    }).then(
-      function() {
-        console.log("created new burger");
-        location.reload();
-      }
-    );
+    if (newBurger.burger_name !== "") {
+      $.ajax("/api/burgers", {
+        type: "POST",
+        data: newBurger
+      }).then(
+        function() {
+          console.log("created new burger");
+          location.reload();
+        }
+      );
+    } else {
+      alert("Please give your dream burger a name.")
+    }
   });
 });
