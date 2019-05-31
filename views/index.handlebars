@@ -5,9 +5,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      <div id="topbun"><br></div>
       {{> burgers/burger-block devourIt=true}}
-      <div id="bottomBun"><br></div>
     {{/unless}}
   {{/each}}
 </ul>
