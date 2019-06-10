@@ -2,7 +2,7 @@
 https://whispering-harbor-24311.herokuapp.com/
 ![screenshot](./public/assets/images/Screenshot_(24).png)
 # What the project does:
-The project provides a user with a front-end interface that interacts with a globally accessable database.
+The project provides a user with a front-end interface that interacts with a globally accessible database.
 # Why the project is useful:
 The project demonstrates the coder's ability to:
 - Hand roll ORM
